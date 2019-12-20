@@ -60,7 +60,7 @@ $(document).ready(function() {
                         <div class="form-group{{ $errors->has('tgl_lahir') ? ' has-error' : '' }}">
                             <label for="tgl_lahir" class="col-md-4 control-label">Tanggal Lahir</label>
                             <div class="col-md-6">
-                                <input id="tgl_lahir" type="date" class="form-control" name="tgl_lahir" value="{{ old('tgl_lahir') }}" required>
+                                <input type="date" id="tgl_lahir" class="form-control" name="tgl_lahir" value="{{ old('tgl_lahir') }}" required>
                                 @if ($errors->has('tgl_lahir'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('tgl_lahir') }}</strong>

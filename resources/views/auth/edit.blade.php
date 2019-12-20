@@ -86,13 +86,6 @@ var check = function() {
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email" class="col-md-4 control-label">Gambar</label>
-                            <div class="col-md-6">
-                                <img class="product" width="200" height="200" @if($data->gambar) src="{{ asset('images/user/'.$data->gambar) }}" @endif />
-                                <input type="file" class="uploads form-control" style="margin-top: 20px;" name="gambar">
-                            </div>
-                        </div>
                         @if(Auth::user()->level == 'admin')
                          <div class="form-group{{ $errors->has('level') ? ' has-error' : '' }}">
                             <label for="level" class="col-md-4 control-label">Level</label>

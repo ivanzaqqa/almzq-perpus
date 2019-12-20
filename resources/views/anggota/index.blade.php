@@ -37,7 +37,7 @@
                             Nama
                           </th>
                           <th>
-                            NPM
+                            NIM
                           </th>
                           <th>
                             Prodi
@@ -54,12 +54,6 @@
                       @foreach($datas as $data)
                         <tr>
                           <td class="py-1">
-                          @if($data->user->gambar)
-                            <img src="{{url('images/user', $data->user->gambar)}}" alt="image" style="margin-right: 10px;" />
-                          @else
-                            <img src="{{url('images/user/default.png')}}" alt="image" style="margin-right: 10px;" />
-                          @endif
-
                             {{$data->nama}}
                           </td>
                           <td>
@@ -74,7 +68,7 @@
                           @elseif($data->prodi == 'SI')
                             Sistem Informasi
                           @else
-                            Kesehatan Masyarakat
+                            Teknik Mesin
                           @endif
                           </td>
                           <td>

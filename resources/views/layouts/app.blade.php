@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PERPUSKU - GILACODING.COM</title>
+  <title>PERPUSTAKAAN DIGITAL</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
@@ -22,19 +22,18 @@
 
   @show
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
 </head>
 <body>
     <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" style="background-color: #1b1b1b;">
       <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html" style="color: #2d2d2d">
-          PERPUSKU
+        <a class="navbar-brand brand-logo" href="index.html" style="color: white; margin-left: 100px;">
+          PERPUSTAKAAN DIGITAL
         </a>
            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
-          <i class="fa fa-align-justify" style="color: #fff;"></i>
+          <i class="fa fa-align-justify" style="color: #1b1b1b;"></i>
         </button>
       </div>
 
@@ -43,12 +42,7 @@
          
           <li class="nav-item dropdown d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text">Hello, {{Auth::user()->name}} !</span>
-                @if(Auth::user()->gambar == '')
-                  <img class="img-xs rounded-circle"  src="{{asset('images/user/default.png')}}" alt="profile image">
-                @else
-                <img class="img-xs rounded-circle"  src="{{asset('images/user/'.Auth::user()->gambar)}}" alt="profile image">
-                @endif
+              <span class="profile-text" style="margin-right: 100px; color: white;">{{Auth::user()->name}}</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0">
@@ -89,7 +83,7 @@
         <footer class="footer">
           <div class="container-fluid clearfix">
             <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © {{date('Y')}}
-            <a href="https://gilacoding.com/" target="_blank">Gilacoding</a>. All rights reserved.</span>
+            <a href="https://gilacoding.com/" target="_blank">Zaqqa Devina Company</a></span>
           </div>
         </footer>
         <!-- partial -->
